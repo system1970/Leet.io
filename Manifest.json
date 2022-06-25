@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Hello World!",
+    "description": "This extension shows a Hello World message!",
+    "version": "1.0",
+    "action": {
+        "default_icon": "download.jpg",
+        "default_popup": "window.html"
+    },
+    "host_permissions": [
+        "https://leetcode.com/problems/*/discuss*"
+    ],
+    "web_accessible_resources": [
+        {
+          "resources": [ "clickLogic.js" ],
+          "matches": [ "https://*/*" ]
+        }
+      ],
+      "background": {
+        "service_worker": "background.js",
+        "type": "module"
+      },
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+       },
+
+    "permissions": [
+        "tabs",
+        "scripting",
+        "webNavigation",
+        "activeTab"
+    ]
+}

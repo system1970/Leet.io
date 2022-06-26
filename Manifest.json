@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Hello World!",
+    "name": "Leet.io",
     "description": "This extension shows a Hello World message!",
     "version": "1.0",
     "action": {
